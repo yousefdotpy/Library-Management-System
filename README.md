@@ -5,8 +5,8 @@
 The Library Management System is a Spring Boot application designed to manage books, patrons, and borrowing records in a library. This application provides endpoints for adding, updating, deleting, and retrieving books and patrons, as well as managing the borrowing and returning of books.
 
 ## Project Structure
-src/main/java/com/example/library/
 ```
+src/main/java/com/example/library/
 ├── controller # Contains REST controllers for handling API requests
 │ ├── BookController.java
 │ ├── PatronController.java
