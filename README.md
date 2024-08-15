@@ -120,6 +120,7 @@ Represents a record of a book being borrowed by a patron.
    ./mvnw spring-boot:run
 5. **Access the API**
    The application will be running at http://localhost:8080. You can use tools like Postman or cURL to interact with the API endpoints.
+   And for the API documentation you can access it through at http://localhost:8080/swagger-ui/index.html.
    
 
 
