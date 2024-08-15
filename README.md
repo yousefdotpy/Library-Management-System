@@ -6,15 +6,31 @@ The Library Management System is a Spring Boot application designed to manage bo
 
 ## Project Structure
 src/main/java/com/example/library/
-├── controller
-├── dto
-├── model
-├── repository
-├── service
-├── LibraryApplication.java
-└── resources
+```
+├── controller # Contains REST controllers for handling API requests
+│ ├── BookController.java
+│ ├── PatronController.java
+│ └── BorrowingController.java
+├── dto # Contains Data Transfer Objects (DTOs)
+│ ├── BookDTO.java
+│ ├── PatronDTO.java
+│ └── BorrowingRecordDTO.java
+├── model # Contains JPA entity classes
+│ ├── Book.java
+│ ├── Patron.java
+│ └── BorrowingRecord.java
+├── repository # Contains Spring Data JPA repository interfaces
+│ ├── BookRepository.java
+│ ├── PatronRepository.java
+│ └── BorrowingRecordRepository.java
+├── service # Contains service classes for business logic
+│ ├── BookService.java
+│ ├── PatronService.java
+│ └── BorrowingRecordService.java
+├── LibraryApplication.java # Main application class
+└── resources # Contains application configuration and resource files
 └── application.properties
-
+```
 
 ## Entities
 
@@ -94,10 +110,16 @@ Represents a record of a book being borrowed by a patron.
 
    ```bash
    git clone https://github.com/yousefdotpy/library-management-system.git
+2. **Navigate to Project Directory**
+   ```bash
    cd library-management-system
+3. **Build the Project**
    ./mvnw clean install
+4. **Run the Application**
+   ```bash
    ./mvnw spring-boot:run
-   ```
+5. **Access the API**
+   The application will be running at http://localhost:8080. You can use tools like Postman or cURL to interact with the API endpoints.
    
 
 
