@@ -114,11 +114,12 @@ Represents a record of a book being borrowed by a patron.
    ```bash
    cd library-management-system
 3. **Build the Project**
+   ```bash
    ./mvnw clean install
-4. **Run the Application**
+5. **Run the Application**
    ```bash
    ./mvnw spring-boot:run
-5. **Access the API**
+6. **Access the API**
    The application will be running at http://localhost:8080. You can use tools like Postman or cURL to interact with the API endpoints.
    And for the API documentation you can access it through at http://localhost:8080/swagger-ui/index.html.
    
